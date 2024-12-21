@@ -3,78 +3,105 @@
 \documentclass{resume}
 %\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
-
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black, % Default link color
+  urlcolor=black,  % Default URL color
+  citecolor=black  % Default citation color
+}
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{Bin Yuan}
+\name{Lu Yi}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{yilu\_2000@outlook.com} \textperiodcentered\ 
+  \phone{(+86) 198-0133-3935} \textperiodcentered\ 
+  % \linkedin[Lu Yi]{linkedin.com/in/lu-yi-53270233b}
+  \homepage{https://luyi256.github.io/}
+  }
 
 \section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{2013 -- Present}
-\textit{Master student} in Electronics Engineering (EE), expected March 2016
-\datedsubsection{\textbf{Xidian University}, Shaanxi, China}{2009 -- 2013}
-\textit{B.S.} in Electronics Engineering (EE)
-
-\section{\faUsers\ Experience}
-\datedsubsection{\textbf{FLAG Inc.} California, America}{2012 -- Present}
-\role{Summer Intern}{Manager: xxx}
-Brief introduction: xxx.
+\datedsubsection{\textbf{Renmin University of China}, Beijing, China}{2022 -- Present}
+\textit{Phd Candidate} in Artificial Intelligence (AI), { GPA }3.88/4.0
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+  \item {\bf Supervisor: }Prof. \href{https://weizhewei.com}{\it \underline{\textcolor{blue}{Zhewei Wei}}} in the \href{https://weizhewei.com/people}{\it \underline{\textcolor{blue}{ALGO lab}}}
+  \item {\bf Research Interests: } Dynamic graph learning, Graph unlearning, Scalable graph algorithms
+\end{itemize}
+\datedsubsection{\textbf{Beijing University of Posts and Telecommunications}, Beijing, China}{2018 -- 2022}
+\textit{B.S.} in Computer Science (CS), GPA 91.24/100, Rank 2.5\%
+\begin{itemize}
+  \item {\bf Awards: } Outstanding Graduate, First Prize Scholarship, Jiongpan Zhou Scholarship (Only one student in the school is selected each year), First Prize in NSCSCC 2020.
 \end{itemize}
 
-\datedsubsection{\textbf{xxx Projects}}{Jan. 2015 -- Present}
-\role{C, Python, Django, Linux}{Individual Projects, collaborated with xxx}
-Brief introduction: xxx
+\section{\faLeanpub\ Publications}
+\subsection{{\bf Scalable and Certifiable Graph Unlearning: Overcoming the Approximation Error Barrier} }
+\role{ {\textbf{Lu Yi}}, Zhewei Wei. ICLR 2025, \href{https://openreview.net/forum?id=pPyJyeLriR}{\textcolor{blue}{\underline{under review}}}. scores: 8,8,8,6 }
+
+We proposed the first approach to scale certified graph unlearning to billion-edge graphs.
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+  \item Integrated approximate propagation techniques to certified unlearning.
+  \item Conducted a non-trivial theoretical analysis of the impact of approximation error on unlearning guarantees.
+  \item Solved the problem of approximate dynamic propagation for the Generalized PageRank scheme.
 \end{itemize}
 
-\datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
-\role{\LaTeX, Maintainer}{Individual Projects}
-An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
+\subsection{\bf TGB-Seq Benchmark: Challenging Temporal GNNs with Complex Sequential Dynamics} 
+\role{ {\textbf{Lu Yi}}, Jie Peng, Yanping Zheng, Fengran Mo, Zhewei Wei, et al. ICLR 2025, \href{https://openreview.net/forum?id=8e2LirwiJT}{\textcolor{blue}{\underline{under review}}}. scores: 8,6,6,6,6 }
+
+We introduced a new benchmark for the future link prediction task involving complex sequential dynamics.
 \begin{itemize}
-  \item Easy to be further customized or extended
-  \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
-  \item FontAwesome 4.5.0 support
+  \item Revealed the limitations of existing benchmarks that exhibit excessive repeated behaviors.
+  \item Identified shortcomings in current temporal GNNs in capturing complex sequential dynamics.
+  \item Eight new challenging datasets from real-world tasks, with an emphasis on exploration behaviors.
 \end{itemize}
 
-% Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
+\subsection{\bf A survey of dynamic graph neural networks} 
+\role{Yanping Zheng, {\textbf{Lu Yi}}, Zhewei Wei. Frontiers of Computer Science, 2024. [\href{https://journal.hep.com.cn/fcs/EN/10.1007/s11704-024-3853-2}{\textcolor{blue}{\underline{PDF}}}]}
+
+We provided a comprehensive review of dynamic graph neural networks, including 
+\begin{itemize}
+  \item Categories and architectural designs of mainstream dynamic GNN models,
+  \item Datasets, benchmarks, and evaluation settings for dynamic GNNs,
+  \item Scalable dynamic GNNs and advanced techniques, such as transfer learning and pre-training techniques.
+\end{itemize}
+
+\subsection{\bf Random-Walk Probability Estimation on Dynamic Weighted Graphs} 
+\role{{Hanzhi Wang*, {\textbf{Lu Yi}}*, Zhewei Wei.} Journal of Computer Research and Development (J-CRAD), 2024.\\ Invited \textbf{oral} presentation in China Conference on Data Mining (CCDM), 2024. [\href{https://crad.ict.ac.cn/article/doi/10.7544/issn1000-1239.202440148}{\textcolor{blue}{\underline{PDF}}}]}
+
+We proposed a new random walk framework by coin-flip sampling to estimate $L$-hop random-walk probabilities.
+\begin{itemize}
+  \item Estimated unbiased random-walk probabilities in near-optimal query time using coin-flip sampling.
+  \item Achieved optimal update time complexity through a neat data structure design.
+\end{itemize}
+
+\subsection{\bf Optimal Dynamic Subset Sampling: Theory and Applications} 
+\role{{\textbf{Lu Yi}}, Hanzhi Wang, Zhewei Wei. KDD 2023 (\textbf{Oral}). [\href{https://dl.acm.org/doi/abs/10.1145/3695827}{\textcolor{blue}{\underline{PDF}}}]}
+
+We presented the first dynamic subset sampling algorithm with optimal sampling and update time complexity.
+\begin{itemize}
+  \item Utilized group partitions to derive a tight upper bound for in-group sampling.
+  \item Proposed a novel table lookup technique to achieve optimal time complexity for group sampling.
+\end{itemize}
+
+
+
+
+\section{\faHeartO\ Project}
+\datedsubsection{{\bf EasterMIPS: A SoC with dual-issue five-stage pipeline CPU}}{Mar. 2020 - Aug. 2020} {\it{\textbf{Role:} Leader}~~~~[\href{https://github.com/easter-mips}{\textcolor{blue}{\underline{CODE}}}]}
+
+\begin{itemize}
+  \item Develped a System on Chip (SoC) on FPGA with a dual-issue, five-stage pipeline CPU. 
+  \item Achieved 27.044 times the instructions per clock cycle of the baseline, Longxin GS132.
+  \item Successfully booted and ran PMON and uCore; booted Linux to user-space initialization.
+  \item Awarded First Prize in the National Student Computer System Capability Challenge (NSCSCC), 2020.
+\end{itemize}
 
 \section{\faCogs\ Skills}
 \begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: C == Python > C++ > Java
-  \item Platform: Linux
-  \item Development: Web, xxx
+  \item {\bf Programming Languages}: Python, C++/C, SystemVerilog
+  \item {\bf AI libraries}: PyTorch, PyTorch Geometric (PyG), Deep Graph Library (DGL) 
 \end{itemize}
 
-\section{\faHeartO\ Honors and Awards}
-\datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
-\datedline{Other awards}{2015}
-
-\section{\faInfo\ Miscellaneous}
-\begin{itemize}[parsep=0.5ex]
-  \item Blog: http://your.blog.me
-  \item GitHub: https://github.com/username
-  \item Languages: English - Fluent, Mandarin - Native speaker
-\end{itemize}
-
-%% Reference
-%\newpage
-%\bibliographystyle{IEEETran}
-%\bibliography{mycite}
 \end{document}
