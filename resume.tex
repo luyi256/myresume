@@ -14,20 +14,22 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{Lu Yi}
-
-\basicInfo{
-  \email{yilu\_2000@outlook.com} \textperiodcentered\ 
-  \phone{(+86) 198-0133-3935} \textperiodcentered\ 
-  % \linkedin[Lu Yi]{linkedin.com/in/lu-yi-53270233b}
-  \homepage{https://luyi256.github.io/}
-  }
+\begin{minipage}{0.8\textwidth}
+\name{Lu Yi} \\
+{\large Temporal GNNs, Graph Unlearning, Graph Algorithms} \\
+\email{yilu\_2000@outlook.com}
+\phone{(+86) 198-0133-3935}
+\homepage{https://luyi256.github.io}
+\end{minipage}
+\begin{minipage}{0.2\textwidth}
+\includegraphics[width=\linewidth]{photo.jpg}
+\end{minipage}
 
 \section{\faGraduationCap\ Education}
 \datedsubsection{\textbf{Renmin University of China}, Beijing, China}{2022 -- Present}
 \textit{Phd Candidate} in Artificial Intelligence (AI), { GPA }3.88/4.0
 \begin{itemize}
-  \item {\bf Supervisor: }Prof. \href{https://weizhewei.com}{\it \underline{\textcolor{blue}{Zhewei Wei}}} in the \href{https://weizhewei.com/people}{\it \underline{\textcolor{blue}{ALGO lab}}}
+  \item {\bf Supervisor: }Prof. \href{https://weizhewei.com}{\it \underline{\textcolor{blue}{Zhewei Wei}}} at the \href{https://weizhewei.com/people}{\it \underline{\textcolor{blue}{ALGO lab}}}
   \item {\bf Research Interests: } Dynamic graph learning, Graph unlearning, Scalable graph algorithms
 \end{itemize}
 \datedsubsection{\textbf{Beijing University of Posts and Telecommunications}, Beijing, China}{2018 -- 2022}
@@ -37,24 +39,24 @@
 \end{itemize}
 
 \section{\faLeanpub\ Publications}
-\subsection{{\bf Scalable and Certifiable Graph Unlearning: Overcoming the Approximation Error Barrier} }
-\role{ {\textbf{Lu Yi}}, Zhewei Wei. ICLR 2025, \href{https://openreview.net/forum?id=pPyJyeLriR}{\textcolor{blue}{\underline{under review}}}. scores: 8,8,8,6 }
-
-We proposed the first approach to scale certified graph unlearning to billion-edge graphs.
-\begin{itemize}
-  \item Integrated approximate propagation techniques to certified unlearning.
-  \item Conducted a non-trivial theoretical analysis of the impact of approximation error on unlearning guarantees.
-  \item Solved the problem of approximate dynamic propagation for the Generalized PageRank scheme.
-\end{itemize}
-
 \subsection{\bf TGB-Seq Benchmark: Challenging Temporal GNNs with Complex Sequential Dynamics} 
-\role{ {\textbf{Lu Yi}}, Jie Peng, Yanping Zheng, Fengran Mo, Zhewei Wei, et al. ICLR 2025, \href{https://openreview.net/forum?id=8e2LirwiJT}{\textcolor{blue}{\underline{under review}}}. scores: 8,6,6,6,6 }
+\role{ {\textbf{Lu Yi}}, Jie Peng, Yanping Zheng, Fengran Mo, Zhewei Wei, et al. ICLR 2025. [\href{https://openreview.net/pdf?id=8e2LirwiJT}{\textcolor{blue}{\underline{PDF}}}] [\href{https://tgb-seq.github.io/}{\textcolor{blue}{\underline{Website}}}]} 
 
 We introduced a new benchmark for the future link prediction task involving complex sequential dynamics.
 \begin{itemize}
   \item Revealed the limitations of existing benchmarks that exhibit excessive repeated behaviors.
   \item Identified shortcomings in current temporal GNNs in capturing complex sequential dynamics.
   \item Eight new challenging datasets from real-world tasks, with an emphasis on exploration behaviors.
+\end{itemize}
+
+\subsection{{\bf Scalable and Certifiable Graph Unlearning: Overcoming the Approximation Error Barrier} }
+\role{ {\textbf{Lu Yi}}, Zhewei Wei. ICLR 2025. [\href{https://openreview.net/pdf?id=pPyJyeLriR}{\textcolor{blue}{\underline{PDF}}}]}
+
+We proposed the first approach to scale certified graph unlearning to billion-edge graphs.
+\begin{itemize}
+  \item Integrated approximate propagation techniques to certified unlearning.
+  \item Conducted a non-trivial theoretical analysis of the impact of approximation error on unlearning guarantees.
+  \item Solved the problem of approximate dynamic propagation for the Generalized PageRank scheme.
 \end{itemize}
 
 \subsection{\bf A survey of dynamic graph neural networks} 
@@ -84,8 +86,6 @@ We presented the first dynamic subset sampling algorithm with optimal sampling a
   \item Utilized group partitions to derive a tight upper bound for in-group sampling.
   \item Proposed a novel table lookup technique to achieve optimal time complexity for group sampling.
 \end{itemize}
-
-
 
 
 \section{\faHeartO\ Project}

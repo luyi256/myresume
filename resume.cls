@@ -72,7 +72,7 @@
 }
 
 \newcommand{\name}[1]{
-  \centerline{\Huge\scshape{#1}}
+  {\Huge\scshape{#1}}
   \vspace{1.25ex}
 }
 
@@ -112,7 +112,7 @@
     {\href{#2}{#1}}}
 
 \newcommand{\basicInfo}[1]{
-  \centerline{\sffamily\large{#1}}
+  {\sffamily\large{#1}}
   \vspace{1.5ex}
 }
 
