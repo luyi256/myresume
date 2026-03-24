@@ -16,7 +16,7 @@
 
 \begin{minipage}{0.8\textwidth}
 \name{Lu Yi} \\
-{\large Temporal GNNs, Graph Unlearning, Graph Algorithms} \\
+{\large Agent, Recommendation, Graph Neural Networks} \\
 \email{yilu\_2000@outlook.com}
 \phone{(+86) 198-0133-3935}
 \homepage{https://luyi256.github.io}
@@ -29,16 +29,35 @@
 \datedsubsection{\textbf{Renmin University of China}, Beijing, China}{2022 -- Present}
 \textit{Phd Candidate} in Artificial Intelligence (AI), { GPA }3.88/4.0
 \begin{itemize}
-  \item {\bf Supervisor: }Prof. \href{https://weizhewei.com}{\it \underline{\textcolor{blue}{Zhewei Wei}}} at the \href{https://weizhewei.com/people}{\it \underline{\textcolor{blue}{ALGO lab}}}
+  \item {\bf Supervisor: }Prof. \href{https://weizhewei.com}{\it \underline{\textcolor{blue}{Zhewei Wei}}} at the \href{https://weizhewei.com/people}{\it \underline{\textcolor{blue}{ALGO Lab}}}
   \item {\bf Research Interests: } Dynamic graph learning, Graph unlearning, Scalable graph algorithms
+  \item {\bf Awards: } China National Scholarship
 \end{itemize}
 \datedsubsection{\textbf{Beijing University of Posts and Telecommunications}, Beijing, China}{2018 -- 2022}
 \textit{B.S.} in Computer Science (CS), GPA 91.24/100, Rank 2.5\%
 \begin{itemize}
-  \item {\bf Awards: } Outstanding Graduate, First Prize Scholarship, Jiongpan Zhou Scholarship (Only one student in the school is selected each year), First Prize in NSCSCC 2020.
+  \item {\bf Awards: } Outstanding Graduate, First Prize Scholarship, Jiongpan Zhou Scholarship (Only one student in the school is selected each year), First Prize in NSCSCC 2020
+\end{itemize}
+
+\section{\faCogs\ Internships}
+\datedsubsection{{\bf Alibaba: Tongyi Group}}{2025.04 -- Present}
+Research Intern | Working with \href{https://osier-yi.github.io/}{\textcolor{blue}{\underline{Liuyi Yao}}}, \href{https://xieyxclack.github.io/}{\textcolor{blue}{\underline{Yuexiang Xie}}}, \href{https://sites.google.com/site/yaliangli/}{\textcolor{blue}{\underline{Yaliang Li}}}
+\begin{itemize}
+  \item Develop a comprehensive short-term memory architecture for \href{https://arxiv.org/abs/2402.14034}{\textcolor{blue}{\underline{AgentScope}}} by developing automatic context management algorithms, achieving infinite-length context perception within physical window constraints.
+  \item (Ongoing) Fine-tuning a specialized LLM via agentic Reinforcement Learning (RL) to autonomously manage context, ensuring high-fidelity memory retention and enhancing agents' reasoning consistency.
 \end{itemize}
 
 \section{\faLeanpub\ Publications}
+\subsection{\bf Future Link Prediction Without Memory or Aggregation} 
+\role{{\textbf{Lu Yi}, Runlin Lei, Fengran Mo, Yanping Zheng, Zhewei Wei, Yuhang Ye.} NeurIPS, 2025. [\href{https://arxiv.org/abs/2505.19408}{\textcolor{blue}{\underline{PDF}}}]}
+
+We proposed a simple yet effective architecture for future link prediction in temporal graphs.
+\begin{itemize}
+  \item Revisited prior architectures and effectively eliminated the need for memory and aggregation modules.
+  \item Successfully tackled the challenges of predicting both seen and unseen edges.
+  \item Achieved state-of-the-art performance on TGB, TGB-Seq, and classic benchmarks.
+\end{itemize}
+
 \subsection{\bf TGB-Seq Benchmark: Challenging Temporal GNNs with Complex Sequential Dynamics} 
 \role{ {\textbf{Lu Yi}}, Jie Peng, Yanping Zheng, Fengran Mo, Zhewei Wei, et al. ICLR 2025. [\href{https://openreview.net/pdf?id=8e2LirwiJT}{\textcolor{blue}{\underline{PDF}}}] [\href{https://tgb-seq.github.io/}{\textcolor{blue}{\underline{Website}}}]} 
 
@@ -50,13 +69,40 @@ We introduced a new benchmark for the future link prediction task involving comp
 \end{itemize}
 
 \subsection{{\bf Scalable and Certifiable Graph Unlearning: Overcoming the Approximation Error Barrier} }
-\role{ {\textbf{Lu Yi}}, Zhewei Wei. ICLR 2025. [\href{https://openreview.net/pdf?id=pPyJyeLriR}{\textcolor{blue}{\underline{PDF}}}]}
+\role{ {\textbf{Lu Yi}}, Zhewei Wei. ICLR 2025 (\textbf{Spotlight}). [\href{https://openreview.net/pdf?id=pPyJyeLriR}{\textcolor{blue}{\underline{PDF}}}]}
 
 We proposed the first approach to scale certified graph unlearning to billion-edge graphs.
 \begin{itemize}
   \item Integrated approximate propagation techniques to certified unlearning.
   \item Conducted a non-trivial theoretical analysis of the impact of approximation error on unlearning guarantees.
   \item Solved the problem of approximate dynamic propagation for the Generalized PageRank scheme.
+\end{itemize}
+
+\subsection{\bf Optimal Dynamic Subset Sampling: Theory and Applications} 
+\role{{\textbf{Lu Yi}}, Hanzhi Wang, Zhewei Wei. KDD 2023 (\textbf{Oral}). [\href{https://dl.acm.org/doi/10.1145/3580305.3599458}{\textcolor{blue}{\underline{PDF}}}]}
+
+We presented the first dynamic subset sampling algorithm with optimal sampling and update time complexity.
+\begin{itemize}
+  \item Utilized group partitions to derive a tight upper bound for in-group sampling.
+  \item Proposed a novel table lookup technique to achieve optimal time complexity for group sampling.
+\end{itemize}
+
+\subsection{\bf Random-Walk Probability Estimation on Dynamic Weighted Graphs} 
+\role{{Hanzhi Wang*, {\textbf{Lu Yi}}*, Zhewei Wei.} Journal of Computer Research and Development (J-CRAD), 2024.\\ Invited \textbf{oral} presentation in China Conference on Data Mining (CCDM), 2024. [\href{https://crad.ict.ac.cn/article/doi/10.7544/issn1000-1239.202440148}{\textcolor{blue}{\underline{PDF}}}]}
+
+We proposed a new random walk framework by coin-flip sampling to estimate $L$-hop random-walk probabilities.
+\begin{itemize}
+  \item Estimated unbiased random-walk probabilities in near-optimal query time using coin-flip sampling.
+  \item Achieved optimal update time complexity through a neat data structure design.
+\end{itemize}
+
+\subsection{\bf Robustness in Text-Attributed Graph Learning: Insights, Trade-offs, and New Defenses} 
+\role{Runlin Lei, {\textbf{Lu Yi}}, Mingguo He, Pengyu Qiu, Zhewei Wei, et al. ICLR 2026. [\href{https://openreview.net/pdf?id=CEJl0gN2gj}{\textcolor{blue}{\underline{PDF}}}]}  
+
+We systematically evaluated the robustness of Text-Attributed Graph (TAG) models (ranging from GNNs to GraphLLMs) against diverse adversarial attacks.
+\begin{itemize}  
+  \item Identified and analyzed a critical robustness trade-off between textual and structural perturbations.
+  \item Developed SFT-auto, a novel defense framework that optimizes the balance between text and structure, significantly enhancing model resilience.
 \end{itemize}
 
 \subsection{\bf A survey of dynamic graph neural networks} 
@@ -69,39 +115,30 @@ We provided a comprehensive review of dynamic graph neural networks, including
   \item Scalable dynamic GNNs and advanced techniques, such as transfer learning and pre-training techniques.
 \end{itemize}
 
-\subsection{\bf Random-Walk Probability Estimation on Dynamic Weighted Graphs} 
-\role{{Hanzhi Wang*, {\textbf{Lu Yi}}*, Zhewei Wei.} Journal of Computer Research and Development (J-CRAD), 2024.\\ Invited \textbf{oral} presentation in China Conference on Data Mining (CCDM), 2024. [\href{https://crad.ict.ac.cn/article/doi/10.7544/issn1000-1239.202440148}{\textcolor{blue}{\underline{PDF}}}]}
+\section{\faLeanpub\ Preprints}
+\subsection{\bf Exploring the Potential of Large Language Models as Predictors in Dynamic Text-Attributed Graphs} 
+\role{{Runlin Lei, Jiarui Ji, Haipeng Ding, \textbf{Lu Yi}, Zhewei Wei, Yongchao Liu, Chuntao Hong.} ArXiv, 2025. [\href{https://arxiv.org/abs/2503.03258}{\textcolor{blue}{\underline{PDF}}}]}
 
-We proposed a new random walk framework by coin-flip sampling to estimate $L$-hop random-walk probabilities.
+We proposed a multi-agent framework for predictive tasks on dynamic text-attributed graphs (DyTAGs).
 \begin{itemize}
-  \item Estimated unbiased random-walk probabilities in near-optimal query time using coin-flip sampling.
-  \item Achieved optimal update time complexity through a neat data structure design.
+  \item Presented the first systematic study and evaluation of LLMs as predictors in DyTAGs, validating their ability to make accurate predictions without training.
+  \item Identified significant cross-domain variability as a key limitation of single-LLM predictors and proposed a multi-agent LLM framework that demonstrates superior generalizability.
+  \item Explored task-specific challenges and opportunities, including the effects of fine-tuning and the intrinsic difficulties of tasks on DyTAGs.
 \end{itemize}
-
-\subsection{\bf Optimal Dynamic Subset Sampling: Theory and Applications} 
-\role{{\textbf{Lu Yi}}, Hanzhi Wang, Zhewei Wei. KDD 2023 (\textbf{Oral}). [\href{https://dl.acm.org/doi/abs/10.1145/3695827}{\textcolor{blue}{\underline{PDF}}}]}
-
-We presented the first dynamic subset sampling algorithm with optimal sampling and update time complexity.
-\begin{itemize}
-  \item Utilized group partitions to derive a tight upper bound for in-group sampling.
-  \item Proposed a novel table lookup technique to achieve optimal time complexity for group sampling.
-\end{itemize}
-
 
 \section{\faHeartO\ Project}
 \datedsubsection{{\bf EasterMIPS: A SoC with dual-issue five-stage pipeline CPU}}{Mar. 2020 - Aug. 2020} {\it{\textbf{Role:} Leader}~~~~[\href{https://github.com/easter-mips}{\textcolor{blue}{\underline{CODE}}}]}
 
 \begin{itemize}
   \item Develped a System on Chip (SoC) on FPGA with a dual-issue, five-stage pipeline CPU. 
-  \item Achieved 27.044 times the instructions per clock cycle of the baseline, Longxin GS132.
   \item Successfully booted and ran PMON and uCore; booted Linux to user-space initialization.
   \item Awarded First Prize in the National Student Computer System Capability Challenge (NSCSCC), 2020.
 \end{itemize}
 
-\section{\faCogs\ Skills}
-\begin{itemize}[parsep=0.5ex]
-  \item {\bf Programming Languages}: Python, C++/C, SystemVerilog
-  \item {\bf AI libraries}: PyTorch, PyTorch Geometric (PyG), Deep Graph Library (DGL) 
-\end{itemize}
+% \section{\faCogs\ Skills}
+% \begin{itemize}[parsep=0.5ex]
+%   \item {\bf Programming Languages}: Python, C++/C, SystemVerilog
+%   \item {\bf AI libraries}: PyTorch, PyTorch Geometric (PyG), Deep Graph Library (DGL) 
+% \end{itemize}
 
 \end{document}
